@@ -1,0 +1,67 @@
+.landing-page {
+  $secondary: map-get($foundation-palette, secondary);
+
+  header {
+    border-bottom: 4px solid $secondary;
+    margin-bottom: 2vh;
+
+    .lead {
+      margin-top: -0.5em;
+      margin-bottom: 0;
+    }
+  }
+
+  .avatar {
+    background-image: url(/assets/img/avatar.png);
+    background-position: 0 50%;
+    background-size: 10em;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #content img {
+    max-height: 30vh;
+  }
+
+  #featured-work {
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
+    margin-bottom: 10vh;
+  }
+
+  footer {
+    border-top: 1px solid $black;
+    margin-top: 10vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      color: $black !important;
+    }
+  }
+
+  #cover1 {
+    background-image: url(../img/orbit1.png);
+  }
+
+  #cover2 {
+    background-image: url(../img/orbit2.png);
+  }
+
+  #cover3 {
+    background-image: url(../img/orbit3.png);
+  }
+
+  #select-photos .cover {
+    background-position: 50% 50%;
+    background-size: cover;
+    padding-top: 60vh !important;
+    width: 100%;
+
+    p {
+      padding: 0 1em;
+      background-color: $white;
+      opacity: 0.85;
+    }
+  }
+}
