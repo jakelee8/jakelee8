@@ -1,0 +1,71 @@
+<div class="landing-page row">
+  <header class="column">
+    <div class="avatar clearfix">
+      <div class="text-right">
+        <h1>Jacob Michael Lee</h1>
+        <h2 class="lead">Software Engineer</h2>
+      </div>
+      <nav>
+        <ul class="menu align-right">
+          {{> links}}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside id="select-photos" class="column orbit" aria-label="Select Photos" data-orbit>
+    <div class="orbit-container">
+      <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+      <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+      <div id="cover1" class="cover is-active orbit-slide">
+        <p>Photo of the Space Needle in Seattle</p>
+      </div>
+      <div id="cover2" class="cover orbit-slide">
+        <p>Photo of Kaneohe Bay in Hawaii</p>
+      </div>
+      <div id="cover3" class="cover orbit-slide">
+        <p>Photo of a Metro tunnel in Montreal</p>
+      </div>
+    </div>
+    <nav class="orbit-bullets">
+      <button class="is-active" data-slide="0"><span class="show-for-sr">Photo of the Space Needle in Seattle</span><span class="show-for-sr">Current Slide</span></button>
+      <button data-slide="1"><span class="show-for-sr">Photo of Kaneohe Bay in Hawaii</span></button>
+      <button data-slide="2"><span class="show-for-sr">Photo of a Metro tunnel in Montreal</span></button>
+    </nav>
+  </aside>
+
+  <section id="content" class="column">
+    <h2 id="featured-work">Featured Work</h2>
+    <div class="row" data-equalizer data-equalize-on="medium">
+      <div class="large-4 columns">
+        <div class="text-center" data-equalizer-watch>
+          <a href="https://github.com/jakelee8/fresh_tomatoes"><img class="thumbnail" src="assets/img/play-movie.jpg" alt="Fresh Tomatoes"></a>
+        </div>
+        <h3><a href="https://github.com/jakelee8/fresh_tomatoes">Fresh Tomatoes</a></h3>
+        <p>A demo movie trailer viewer implemented in Python using Flask, SQLAlchemy, and Twitter Bootstrap. Udacity project.</p>
+      </div>
+      <div class="large-4 columns">
+        <div class="text-center" data-equalizer-watch>
+          <a href="https://github.com/jakelee8/dog-project/blob/master/dog_app.ipynb"><img class="thumbnail" src="assets/img/sample_dog_output.png" alt="Deep Learning &amp; Dogs"></a>
+        </div>
+        <h3><a href="https://github.com/jakelee8/dog-project/blob/master/dog_app.ipynb">Deep Learning &amp; Dogs</a></h3>
+        <p>A demonstration on how to use Convolutional Neural Networks, transfer learning, and Mixture of Experts to identify the breed of dogs in images of dogs. Udacity project.</p>
+      </div>
+      <div class="large-4 columns">
+        <div class="text-center" data-equalizer-watch>
+          <a href="https://github.com/udacity/Bokeh"><img class="thumbnail" src="assets/img/rnn-text.png" alt="Text generation with RNNs"></a>
+        </div>
+        <h3><a href="https://github.com/jakelee8/aind2-rnn/blob/master/RNN_project.ipynb">Text generation with RNNs</a></h3>
+        <p>A demonstration on how to generate text using Recurrent Neural Networks. Udacity project.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="column">
+    <nav class="menu-centered">
+      <ul class="menu">
+        {{> links}}
+      </ul>
+    </nav>
+  </footer>
+</div>
